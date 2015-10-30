@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.0.2"
+}
+
+dependencies {
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile 'com.netflix.rxjava:rxjava-android:0.20.6'
+    compile 'com.squareup.picasso:picasso:2.3.4'
+    //    compile 'com.google.android.gms:play-services:+'
+    compile 'com.google.apis:google-api-services-youtube:v3-rev120-1.19.0'
+}
+
+version = "0.1.1"
+group = "com.laimiux"
+
+configurations {
+    archives {
+        extendsFrom configurations.default
+    }
+}
+

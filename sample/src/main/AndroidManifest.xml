@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lichen.youtubedownloader" >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-sdk android:minSdkVersion="14" />
+    <application
+        android:name="com.lichen.youtubedownloader.YoutubeExampleApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!--This meta-data tag is required to use Google Play Services.-->
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <activity
+            android:name="com.lichen.youtubedownloader.ListViewActivity"
+            android:theme="@style/Theme.MyTheme"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lichen.youtube.PlayerActivity"
+            android:theme="@style/Theme.MyTheme"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.lichen.youtubedownloader.DownloadActivity"
+            android:theme="@style/Theme.MyTheme"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:label="@string/title_activity_download" >
+        </activity>
+        <activity
+            android:name="com.lichen.youtubedownloader.VideoActivity"
+            android:theme="@style/Theme.MyTheme"
+            android:label="@string/title_activity_video"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity
+            android:name="com.lichen.youtubedownloader.AboutActivity"
+            android:theme="@style/Theme.MyTheme"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.lichen.youtubedownloader.ListViewActivity" >
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.lichen.youtubedownloader.ListViewActivity" />
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize">
+        </activity>
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent"
+            >
+        </activity>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+        <meta-data android:value="562cb50967e58ebcef004b14" android:name="UMENG_APPKEY"></meta-data>
+    </application>
+
+</manifest>

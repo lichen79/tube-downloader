@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.lichen.youtubedownloader.ListViewActivity">
+
+    <item android:id="@+id/menu_download" android:title="@string/download"
+        android:icon="@drawable/download2"
+        android:orderInCategory="1" app:showAsAction="always" />
+
+    <item android:id="@+id/menu_file" android:title="@string/downloadfile"
+        android:icon="@drawable/videosfolder"
+        android:orderInCategory="1" app:showAsAction="always" />
+
+    <item android:id="@+id/menu_about" android:title="@string/action_about"
+        android:icon="@drawable/about"
+        android:orderInCategory="200" app:showAsAction="always" />
+</menu>

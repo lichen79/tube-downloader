@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">android-youtube-listview</string>
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="title_activity_video">VideoActivity</string>
+    <string name="indicators">Indicators On/Off</string>
+    <string name="title_activity_download">DownloadActivity</string>
+</resources>

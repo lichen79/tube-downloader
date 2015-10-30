@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tube Downloader</string>
+    <string name="search">Search</string>
+    <string name="search_input">ex. Music, Minicraft, Movies...</string>
+    <string name="title_activity_download">Video Files</string>
+    <string name="title_activity_video">Watch</string>
+    <string name="title_activity_about">About</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="download">Download</string>
+    <string name="downloadfile">Video Files</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+        <string name="credits">App developed by Li CHEN
+        \n
+        \n
+        </string>
+    <string name="app_icon">App icon</string>
+    <string name="other_apps">Other apps</string>
+    <string name="feedback">Feedback</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="banner_ad_unit_id1">ca-app-pub-3940256099942544/6300978111</string>
+
+    <string name="banner_ad_unit_prod">ca-app-pub-6362094033683998/8621669061</string>
+    <string name="banner_ad_unit_prod1">ca-app-pub-6362094033683998/1098402262</string>
+
+
+
+</resources>
